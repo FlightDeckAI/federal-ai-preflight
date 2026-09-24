@@ -1,0 +1,7 @@
+apiVersion: ax.io/v1alpha1
+kind: Task
+metadata:
+  name: synthetic-agent
+spec:
+  image: registry.internal/agent@sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  debug: false

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "profile": "restricted",
+  "resources_reviewed": 1,
+  "passed_static_checks": true,
+  "scope": "Static review only. No cluster, image, DNS, secret, runtime egress, accreditation or air-gap verification.",
+  "findings": []
+}

@@ -1,3 +1,13 @@
+# Federal.AI Deployment Preflight
+
+A focused FlightDeckAI extension of [google/ax](https://github.com/google/ax).
+
+**[Start here: working example, quickstart, validation and limitations](flightdeck/preflight/README.md)** · [Upstream credit and change record](flightdeck/preflight/UPSTREAM.md)
+
+The upstream project and history remain intact below. This is a first public release, not a production certification.
+
+---
+
 <h1>
   <img src="assets/axolotl.svg" width="70" align="absmiddle" alt="AX axolotl">
   AX

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "profile": "restricted",
+  "resources_reviewed": 1,
+  "passed_static_checks": false,
+  "scope": "Static review only. No cluster, image, DNS, secret, runtime egress, accreditation or air-gap verification.",
+  "findings": [
+    {
+      "resource": "synthetic-agent",
+      "kind": "Task",
+      "code": "UNPINNED_IMAGE",
+      "path": "spec.image",
+      "level": "error",
+      "message": "Pin an immutable SHA-256 image digest."
+    },
+    {
+      "resource": "synthetic-agent",
+      "kind": "Task",
+      "code": "EXTERNAL_DEPENDENCY",
+      "path": "spec.image",
+      "level": "error",
+      "message": "Host is not in the operator-supplied internal-host inventory."
+    },
+    {
+      "resource": "synthetic-agent",
+      "kind": "Task",
+      "code": "DEBUG_ENABLED",
+      "path": "spec.debug",
+      "level": "warning",
+      "message": "Debug guest services are enabled."
+    },
+    {
+      "resource": "synthetic-agent",
+      "kind": "Task",
+      "code": "INLINE_CREDENTIAL",
+      "path": "spec.env[0]",
+      "level": "error",
+      "message": "Credential-like environment name uses a literal value; value is omitted from this report."
+    },
+    {
+      "resource": "synthetic-agent",
+      "kind": "Task",
+      "code": "UNRESOLVED_REFERENCE",
+      "path": "spec.workspaces[0]",
+      "level": "error",
+      "message": "Referenced resource is absent from this manifest bundle."
+    }
+  ]
+}

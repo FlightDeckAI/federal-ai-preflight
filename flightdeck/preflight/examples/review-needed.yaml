@@ -1,0 +1,12 @@
+apiVersion: ax.io/v1alpha1
+kind: Task
+metadata:
+  name: synthetic-agent
+spec:
+  image: ghcr.io/example/agent:latest
+  debug: true
+  workspaces:
+    - name: missing-workspace
+  env:
+    - name: API_KEY
+      value: DEMO_PLACEHOLDER_NOT_A_KEY
